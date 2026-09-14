@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SBX Legal Guide — UX/UI Portfolio</title>
+<meta name="description" content="법무 정보 탐색 경험을 개선한 5페이지 UX/UI 포트폴리오 프로토타입" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-cover">
+<header class="site-header">
+  <nav class="nav" aria-label="포트폴리오 내비게이션">
+    <a class="brand" href="#cover"><span class="brand-mark" aria-hidden="true"></span>SBX Legal Guide</a>
+    <span class="page-indicator">Portfolio / 05 pages</span>
+    <div class="nav-links">
+      <a class="active" href="#cover">01 Cover</a>
+      <a href="#problem">02 Problem</a>
+      <a href="#solution">03 Solution</a>
+      <a href="#prototype">04 Prototype</a>
+      <a href="#role">05 My Role</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page cover" id="cover" data-page="01">
+    <div class="cover-deco" aria-hidden="true"></div>
+    <div class="cover-dot" aria-hidden="true"></div>
+    <div class="page-inner cover-grid">
+      <div>
+        <div class="page-kicker">01 / Cover · Legal Search Experience</div>
+        <h1 class="display">복잡한 법률 정보를<br><span class="serif">쉽게 찾는</span> 방법.</h1>
+        <p class="lead cover-copy">법무 업무에서 필요한 법령과 근거 자료를 <strong>질문 → 쟁점 → 관련 법령 → 공식 원문</strong> 순서로 탐색할 수 있도록 설계한 UX/UI 프로토타입입니다.</p>
+        <div class="accent-line"></div>
+        <div class="meta-row">
+          <span>UX/UI Design</span><span>HTML5 · CSS3 · JavaScript</span><span>AI Search Concept</span><span>2026</span>
+        </div>
+      </div>
+      <aside class="cover-aside">
+        <div class="serif">Legal information,<br>made easier.</div>
+        <p class="body">법률을 대신 판단하는 서비스가 아니라, 법무팀이 필요한 근거를 더 빠르게 찾고 검증할 수 있도록 정보 구조와 인터페이스를 정리하는 데 초점을 맞췄습니다.</p>
+        <div class="mini-stats">
+          <div class="mini-stat"><b>Find</b><span>질문에서 관련 쟁점 찾기</span></div>
+          <div class="mini-stat"><b>Understand</b><span>왜 관련 있는지 짧게 이해</span></div>
+          <div class="mini-stat"><b>Verify</b><span>공식 법령 원문으로 확인</span></div>
+          <div class="mini-stat"><b>Build</b><span>디자인을 실제 프로토타입으로 구현</span></div>
+        </div>
+      </aside>
+    </div>
+    <div class="corner-no">01</div>
+  </section>
+
+  <section class="page problem" id="problem" data-page="02">
+    <div class="problem-no" aria-hidden="true">02</div>
+    <div class="page-inner problem-grid">
+      <div>
+        <div class="page-kicker">02 / Problem</div>
+        <h2 class="title">정보는 있지만,<br><span class="serif">찾기는 어렵습니다.</span></h2>
+        <p class="lead problem-intro">법률 관련 질문은 표현이 다양하고, 검색 결과가 법령명과 문서 목록 중심으로 쌓이면 사용자가 다시 관계를 해석해야 합니다. AI 답변 역시 출처와 확인 경로가 약하면 오히려 검증 비용을 늘릴 수 있습니다.</p>
+        <div class="before-card" aria-label="기존 검색 결과 예시">
+          <div class="caption">BEFORE / 검색 결과 예시</div>
+          <ul>
+            <li><strong>개인정보 보호법:</strong> 개인정보 처리와 보호에 관한 기준</li>
+            <li><strong>정보통신망법:</strong> 온라인 서비스·정보보호·이용자 보호 관련 기준</li>
+            <li><strong>국가법령정보센터:</strong> 현행 법령의 공식 원문 확인 <span class="source-chip">법령 +3</span></li>
+          </ul>
+          <div class="fake-line s1"></div><div class="fake-line s2"></div><div class="fake-line s3"></div>
+        </div>
+      </div>
+      <div class="problem-board">
+        <article class="problem-row">
+          <div class="num">01</div>
+          <div><h3>검색 결과의 과다 노출</h3><p>키워드가 들어간 자료가 한 번에 나오면 어떤 결과가 가장 중요한지 다시 판단해야 합니다.</p></div>
+          <span class="problem-tag">Search overload</span>
+        </article>
+        <article class="problem-row">
+          <div class="num">02</div>
+          <div><h3>질문과 법령의 연결 부족</h3><p>법률명을 모르는 사용자는 자신의 질문이 어떤 법적 쟁점과 연결되는지 먼저 이해해야 합니다.</p></div>
+          <span class="problem-tag">Context gap</span>
+        </article>
+        <article class="problem-row">
+          <div class="num">03</div>
+          <div><h3>AI 답변의 검증 문제</h3><p>답변 문장보다 어떤 근거를 봤는지, 현행 조문인지, 최종 확인은 어디서 하는지가 중요합니다.</p></div>
+          <span class="problem-tag">Trust & verify</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page solution" id="solution" data-page="03">
+    <div class="page-inner solution-grid">
+      <div class="solution-copy">
+        <div class="page-kicker">03 / Solution</div>
+        <h2 class="title">검색 결과가 아니라<br><span class="serif">판단 근거를</span> 보여줍니다.</h2>
+        <p class="lead">하나의 법률을 바로 답으로 단정하기보다 질문의 목적을 먼저 좁히고, 관련 법령 후보와 이유를 보여준 다음 공식 원문으로 연결합니다.</p>
+        <div class="solution-note">
+          <b>UX Principle</b>
+          <p>모르는 질문에는 억지로 답을 만들지 않고, 사용자가 다음 확인 단계로 이동할 수 있도록 쟁점과 출처를 구조화합니다.</p>
+        </div>
+      </div>
+      <div class="flow" aria-label="검색 흐름">
+        <article class="flow-item"><div class="n">01</div><div><h3>Question</h3><p>“온라인에서 개인정보를 받을 때 뭘 알려야 하지?”처럼 평소 사용하는 문장으로 질문합니다.</p></div><div class="flow-visual w-34"></div></article>
+        <article class="flow-item"><div class="n">02</div><div><h3>Understand</h3><p>개인정보 수집, 온라인 서비스, 콘텐츠, 플랫폼 등 질문의 핵심 쟁점을 먼저 구분합니다.</p></div><div class="flow-visual w-55"></div></article>
+        <article class="flow-item"><div class="n">03</div><div><h3>Relevant Law</h3><p>관련 가능성이 높은 법령을 순서대로 보여주고, 왜 확인해야 하는지 한 문장으로 설명합니다.</p></div><div class="flow-visual w-76"></div></article>
+        <article class="flow-item"><div class="n">04</div><div><h3>Evidence</h3><p>최종적으로 국가법령정보센터 등 공식 원문에서 현행 조문과 시행 여부를 검증하도록 연결합니다.</p></div><div class="flow-visual w-96"></div></article>
+      </div>
+    </div>
+    <div class="corner-no">03</div>
+  </section>
+
+  <section class="page prototype" id="prototype" data-page="04">
+    <div class="page-inner prototype-grid">
+      <div class="prototype-copy">
+        <div class="page-kicker">04 / Prototype</div>
+        <h2 class="title">법률을 몰라도<br><span class="serif">질문부터</span> 시작.</h2>
+        <p class="lead">검색창에서 자연어 질문을 입력하면 관련 쟁점과 법령 후보를 보여주고, 마지막에는 공식 원문 확인까지 이어집니다.</p>
+        <p class="caption">직접 테스트: 개인정보 / 정보통신망 / 허위정보 / 법령 원문 버튼을 눌러보거나 검색어를 입력해보세요.</p>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock-bg" aria-hidden="true"></div>
+        <div class="browser">
+          <div class="browser-top"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><div class="browser-url">legal-guide.local / search</div></div>
+          <div class="app">
+            <div class="app-head"><div><div class="eyebrow">SBX LEGAL GUIDE</div><h3>법령 탐색</h3></div><span class="app-status" aria-label="프로토타입 활성 상태"></span></div>
+            <div class="search-area">
+              <div class="search-label">무엇을 확인하고 싶나요?</div>
+              <div class="searchbar"><input id="query" type="search" value="온라인에서 개인정보를 수집할 때 어떤 내용을 확인해야 하나요?" aria-label="법령 검색어" /><button id="searchBtn" type="button">검색</button></div>
+              <div class="chips" aria-label="검색 예시">
+                <button class="chip-btn active" type="button" data-query="개인정보">개인정보</button>
+                <button class="chip-btn" type="button" data-query="정보통신망">정보통신망</button>
+                <button class="chip-btn" type="button" data-query="허위정보">허위정보</button>
+                <button class="chip-btn" type="button" data-query="법령 원문">법령 원문</button>
+              </div>
+            </div>
+            <div class="results">
+              <div class="result-summary"><div><h4 id="resultTitle"></h4><p id="resultDesc"></p></div><span class="relevance" id="resultBadge"></span></div>
+              <div class="law-stack" id="lawStack"></div>
+              <div class="guard" id="guardText"></div>
+              <div class="source-row"><span>Portfolio demo · 실제 법률 검토 시 최신 법령과 사내 기준 확인 필요</span><span class="source-link">공식 원문 확인 →</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="corner-no">04</div>
+  </section>
+
+  <section class="page role" id="role" data-page="05">
+    <div class="page-inner">
+      <div class="role-top">
+        <div><div class="page-kicker">05 / What I Bring</div><h2 class="title">디자인에서 끝나지 않고<br><span class="serif">실제 사용까지.</span></h2></div>
+        <p class="lead">복잡한 업무를 구조화하고, 보이는 화면으로 만들고, 실제 동작하는 프로토타입까지 연결하는 것이 이 프로젝트에서 보여주려는 핵심 역량입니다.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card"><div class="n">01</div><h3>UX / UI</h3><p>법률명보다 사용자의 질문과 판단 과정을 중심으로 정보 구조와 검색 흐름을 재구성합니다.</p><ul><li>Problem Definition</li><li>Information Architecture</li><li>Search UX</li><li>UI Design</li></ul></article>
+        <article class="skill-card"><div class="n">02</div><h3>Publishing</h3><p>설계한 화면을 정적 시안에서 끝내지 않고, 브라우저에서 바로 테스트할 수 있는 형태로 구현합니다.</p><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Web</li></ul></article>
+        <article class="skill-card"><div class="n">03</div><h3>AI + Workflow</h3><p>AI가 정답을 단정하는 방식보다, 질문 의도와 근거를 연결해 실무자가 검증하기 쉬운 흐름을 설계합니다.</p><ul><li>AI Search Concept</li><li>Evidence-first UX</li><li>Workflow Idea</li><li>Prototype</li></ul></article>
+      </div>
+      <div class="final-statement"><div class="label">Final Message</div><h2>복잡한 업무를 이해하고,<br>사람이 바로 쓸 수 있는 <span class="serif">경험으로 바꿉니다.</span></h2></div>
+      <div class="footer-meta"><span>SBX Legal Guide · UX/UI Portfolio Prototype</span><span>HTML5 / CSS3 / Vanilla JavaScript</span></div>
+    </div>
+  </section>
+</main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
