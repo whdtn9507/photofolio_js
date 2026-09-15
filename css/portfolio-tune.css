@@ -6,8 +6,17 @@
 .section-heading h2,.prototype-copy h2{font-size:clamp(30px,3.4vw,46px);line-height:1.2}
 .section-heading{margin-bottom:50px}
 .problem-list h3{font-size:18px}
-.solution-cards h3{font-size:17px}
 .role-card h3{font-size:18px}
+
+/* Solution flow: keep the process visible without letting it dominate the page */
+#solution.section{padding-top:86px;padding-bottom:86px}
+#solution .section-heading{margin-bottom:36px}
+#solution .wide-visual{padding:10px;overflow:hidden}
+#solution .wide-visual img{width:100%;height:250px;max-height:none;object-fit:cover;object-position:center}
+#solution .solution-cards{margin-top:18px}
+#solution .solution-cards article{min-height:142px;padding:20px 18px}
+#solution .solution-cards h3{margin:18px 0 8px;font-size:17px}
+#solution .solution-cards p{line-height:1.65}
 
 /* Closing is a single editorial statement, not a category block */
 .closing{
@@ -17,7 +26,8 @@
   border-top:1px solid var(--line);
 }
 .closing h2{
-  max-width:900px;
+  max-width:none;
+  width:100%;
   font-size:clamp(28px,3vw,42px);
   line-height:1.28;
   font-weight:700;
@@ -48,8 +58,13 @@
   .hero{padding-top:104px}
   .hero h1{font-size:36px}
   .section-heading h2,.prototype-copy h2{font-size:30px}
+  #solution.section{padding-top:68px;padding-bottom:68px}
+  #solution .section-heading{margin-bottom:28px}
+  #solution .wide-visual img{height:210px}
+  #solution .solution-cards{margin-top:14px}
+  #solution .solution-cards article{min-height:0;padding:18px 16px}
   .closing{margin-top:56px;padding-top:28px}
-  .closing h2{font-size:30px}
+  .closing h2{max-width:none;width:100%;font-size:30px}
   .closing-meta{gap:10px 12px}
   .closing-meta span:not(:last-child)::after{margin-left:12px}
 }
