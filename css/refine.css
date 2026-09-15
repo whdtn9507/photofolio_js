@@ -1,0 +1,22 @@
+/* Compact refinements for the case-study flow and closing statement */
+#solution.section{padding-top:96px;padding-bottom:96px}
+#solution .section-heading{margin-bottom:42px}
+#solution .wide-visual{padding:10px;overflow:hidden}
+#solution .wide-visual img{width:100%;height:260px;max-height:none;object-fit:cover;object-position:center}
+#solution .solution-cards{margin-top:22px}
+#solution .solution-cards article{min-height:150px;padding:22px 20px}
+#solution .solution-cards h3{margin:20px 0 8px}
+
+.closing{display:block;margin-top:72px;padding-top:34px}
+.closing h2{max-width:none!important;width:100%;}
+.closing-meta{grid-column:auto;margin-top:22px}
+
+@media (max-width:760px){
+  #solution.section{padding-top:76px;padding-bottom:76px}
+  #solution .section-heading{margin-bottom:30px}
+  #solution .wide-visual img{height:220px}
+  #solution .solution-cards{margin-top:16px}
+  #solution .solution-cards article{min-height:0;padding:20px 18px}
+  .closing{margin-top:56px;padding-top:28px}
+  .closing h2{max-width:none!important;width:100%;}
+}
