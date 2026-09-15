@@ -1,0 +1,55 @@
+/* Portfolio tuning: smaller type scale and grounded role positioning */
+.section{padding:96px 0}
+.hero{padding-top:128px;min-height:680px}
+.hero h1{font-size:clamp(36px,4.2vw,54px);line-height:1.12}
+.intro{font-size:16px;line-height:1.78;max-width:600px}
+.section-heading h2,.prototype-copy h2{font-size:clamp(30px,3.4vw,46px);line-height:1.2}
+.section-heading{margin-bottom:50px}
+.problem-list h3{font-size:18px}
+.solution-cards h3{font-size:17px}
+.role-card h3{font-size:18px}
+
+/* Closing is a single editorial statement, not a category block */
+.closing{
+  display:block;
+  margin-top:72px;
+  padding-top:34px;
+  border-top:1px solid var(--line);
+}
+.closing h2{
+  max-width:900px;
+  font-size:clamp(28px,3vw,42px);
+  line-height:1.28;
+  font-weight:700;
+  letter-spacing:-.035em;
+}
+.closing-meta{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:26px;
+}
+.closing-meta span{
+  border:0;
+  padding:0;
+  border-radius:0;
+  font-size:11px;
+  color:#746e67;
+}
+.closing-meta span:not(:last-child)::after{
+  content:"/";
+  margin-left:14px;
+  color:#b2aba2;
+}
+
+@media (max-width:760px){
+  .section{padding:74px 0}
+  .hero{padding-top:104px}
+  .hero h1{font-size:36px}
+  .section-heading h2,.prototype-copy h2{font-size:30px}
+  .closing{margin-top:56px;padding-top:28px}
+  .closing h2{font-size:30px}
+  .closing-meta{gap:10px 12px}
+  .closing-meta span:not(:last-child)::after{margin-left:12px}
+}
