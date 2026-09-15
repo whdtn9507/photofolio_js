@@ -14,7 +14,6 @@
 #solution .wide-visual{padding:10px 14px;overflow:visible}
 #solution .wide-visual img{
   width:100%;
-  height:360px;
   max-height:none;
   object-fit:cover;
   object-position:center;
