@@ -13,13 +13,11 @@
 #solution .section-heading{margin-bottom:32px}
 #solution .wide-visual{padding:10px 14px;overflow:visible}
 #solution .wide-visual img{
-  display:block;
   width:100%;
-  height:auto;
-  max-height:190px;
-  object-fit:contain;
+  height:360px;
+  max-height:none;
+  object-fit:cover;
   object-position:center;
-  margin:0 auto;
 }
 #solution .solution-cards{margin-top:16px}
 #solution .solution-cards article{min-height:136px;padding:18px 18px}
